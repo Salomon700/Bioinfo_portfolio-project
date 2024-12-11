@@ -1,0 +1,26 @@
+{% extends "base.html" %} {% block content %}
+<div class="container mt-5">
+  <h1 class="text-center">Pairwise Alignment</h1>
+  <form class="mt-4">
+    <div class="mb-3">
+      <label for="sequence1" class="form-label">Sequence 1</label>
+      <textarea
+        id="sequence1"
+        class="form-control"
+        rows="3"
+        placeholder="Enter Sequence 1"
+      ></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="sequence2" class="form-label">Sequence 2</label>
+      <textarea
+        id="sequence2"
+        class="form-control"
+        rows="3"
+        placeholder="Enter Sequence 2"
+      ></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Align</button>
+  </form>
+</div>
+{% endblock %}

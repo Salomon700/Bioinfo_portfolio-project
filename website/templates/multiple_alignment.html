@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block content %}
+<div class="container mt-5">
+  <h1 class="text-center">Multiple Sequence Alignment</h1>
+  <form class="mt-4">
+    <div class="mb-3">
+      <label for="sequences" class="form-label">Sequences</label>
+      <textarea
+        id="sequences"
+        class="form-control"
+        rows="5"
+        placeholder="Enter sequences separated by new lines"
+      ></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Align</button>
+  </form>
+</div>
+{% endblock %}
